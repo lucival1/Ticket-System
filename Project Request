@@ -1,0 +1,55 @@
+Introduction
+A company has contacted you asking you to develop a system that can be rolled out a technical support team. Currently they are using a paper based system and they often notice that a number of pieces of information become lost a and the company is never sure if the customer help ticket has been solved.
+In the company there are three different roles in the company which should be mirrored in your system these include:
+
+Tech Support Member – A person who is responsible for reading the ticket and dealing with the customer. Once they are finished with the ticket they often mark it with a “Close” to say the customer has been dealt with correctly.
+
+Manager – The manager is not concerned about each individual ticket, but they do want to know the overall statistics about the tickets. They would like to see what time the ticket was opened and what time the ticket was closed. In additional to this, they want to see how many different tickets were allocated to each different team member to monitor their productivity.
+
+System Admin – The admin of the system is responsible for listing all of the accounts that ae in the system. They have the ability to change the usernames and password of tech support team members and also the project manager.
+
+
+
+System Specification (25%)
+When the application first loads, a login should be presented to the user. From this login screen, there should then be redirected to a separate dashboard depending on the role that they have.
+
+Each user should have the ability to log out of the system. When this happens, the user should be prompted with a message saying “Are you sure you want to exit” if they select yes, then the program will close, if they say no then the program will remain open.
+Tech Support
+The tech support team has three members, John, James and Johan.
+
+The tech support should have the ability to view a list of different tickets that are in the system, and also have the ability to add new tickets into the system.
+
+When a ticket is created, a time stamp should be added onto the ticket, so when the ticket is closed, the length the ticket was open for can be calculated. (epoch time!)
+
+Each ticket is created by open a new window and allowing the user to type in the different pieces of information about the ticket. These include, the date the ticket was opened, who the ticket is being assigned to on the tech team, the issue the user is having and a drop down list specifying if the issues is classified as “urgent / normal / longterm “
+
+As errors do happen, a method should exist to allow the tech support team member to delete a ticket from the system.
+Manager
+The manager of the company is less concerned about the details of a ticket and more concerned about the amount of work that is being done.
+
+The manager should have a simple dashboard that outlines the number of tickets that are in the system. In addition to this, a break down of the tickets that are “Open” should be counted, and the tickets that are “Closed” should be counted.
+
+A refresh button should be added in to the managers dashboard to allow the latest information to be gathered from the database and displayed to the manager.
+
+Each ticket in the system costs the owner 50 euro. A simple dashboard should be presented to the owner, outlining how much money all the tickets have cost him so far (tickets that are closed) and how many tickets are still left open. Both costs should be added onto the screen.
+
+System Admin
+The system admin is responsible for all of the accounts in the system.
+
+The system admin should have the ability to add new users into the system and set a username and password form them.
+
+If a user forgets their password, a method should exist that will change their password to the once that has been specified by the user.
+
+Data Storage
+All the data that we have been working with has been stored in a database. For each step of this application, the a custom database table should be created to store user information and also a second table for storing ticket information.
+After the application has been developed, a custom runnable jar should be created allowing the application to easily be transported to users.
+
+Distinction Grade Additional Work (5%)
+If you are looking to get a distinction grade, for all of the information that is returned to the manager of the company, create a bar graph visualisation when showing this information.
+
+
+Deliverables 
+Application code 
+Wireframes for the application 
+Database CREATE and INSERT code export 
+Runnable Jar File
